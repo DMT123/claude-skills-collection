@@ -20,6 +20,10 @@ The `templates/` directory contains reusable configs for any new project. See [t
 | [CLAUDE.md.template](templates/CLAUDE.md.template) | Standard project CLAUDE.md |
 | [CLAUDE.monorepo.md.template](templates/CLAUDE.monorepo.md.template) | Monorepo CLAUDE.md |
 | [CLAUDE.local.md.template](templates/CLAUDE.local.md.template) | Personal overrides (gitignored) |
+| [global-CLAUDE.md.template](templates/global-CLAUDE.md.template) | Global user defaults (`~/.claude/CLAUDE.md`) |
+| [MEMORY-GUIDE.md](templates/MEMORY-GUIDE.md) | How CLAUDE.md hierarchy works as persistent memory |
+| [API-KEYS-GUIDE.md](templates/API-KEYS-GUIDE.md) | Secure central API key management |
+| [env.master.template](templates/env.master.template) | Master API key vault template |
 | [.github/](templates/.github/) | CI workflow, PR template, issue templates, Dependabot |
 | [.editorconfig](templates/.editorconfig) | Consistent formatting across editors |
 | [.gitignore.template](templates/.gitignore.template) | Comprehensive gitignore |

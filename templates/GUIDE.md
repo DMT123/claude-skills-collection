@@ -5,16 +5,22 @@ Reusable configs and templates for new projects. Copy what you need.
 ## Quick Setup for a New Project
 
 ```bash
-# 1. Copy the templates you want
+# 1. One-time global setup (do this once ever)
+mkdir -p ~/.claude ~/.env.shared
+cp templates/global-CLAUDE.md.template ~/.claude/CLAUDE.md
+cp templates/env.master.template ~/.env.shared/.env.master
+chmod 700 ~/.env.shared && chmod 600 ~/.env.shared/.env.master
+# Edit both files with your actual values
+
+# 2. Per-project setup (do this per repo)
 cp templates/CLAUDE.md.template ./CLAUDE.md
 cp templates/.editorconfig ./.editorconfig
 cp templates/.gitignore.template ./.gitignore
 cp -r templates/.github ./.github
-
-# 2. Create local overrides (gitignored)
 cp templates/CLAUDE.local.md.template ./.claude.local.md
+cp templates/envrc.template ./.envrc  # If using direnv
 
-# 3. Fill in the placeholders in CLAUDE.md
+# 3. Fill in the placeholders
 ```
 
 ## What's Included
@@ -26,6 +32,21 @@ cp templates/CLAUDE.local.md.template ./.claude.local.md
 | `CLAUDE.md.template` | Standard single-project repo |
 | `CLAUDE.monorepo.md.template` | Monorepo with multiple packages |
 | `CLAUDE.local.md.template` | Personal preferences (gitignored) |
+| `global-CLAUDE.md.template` | Global user defaults at `~/.claude/CLAUDE.md` |
+
+### Memory & API Keys
+
+| Guide | Purpose |
+|-------|---------|
+| `MEMORY-GUIDE.md` | How the CLAUDE.md hierarchy works as persistent memory |
+| `API-KEYS-GUIDE.md` | Secure central API key management across projects |
+
+### Environment Templates
+
+| File | Purpose |
+|------|---------|
+| `env.master.template` | Master API key vault at `~/.env.shared/.env.master` |
+| `envrc.template` | `direnv` config that sources master keys + project overrides |
 
 ### GitHub Configs
 

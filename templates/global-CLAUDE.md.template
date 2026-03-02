@@ -1,0 +1,52 @@
+# Global Claude Instructions
+
+# Place this file at: ~/.claude/CLAUDE.md
+# It applies to ALL projects automatically — no per-project duplication needed.
+
+## Identity
+
+- Name: {Your Name}
+- Email: {your@email.com}
+- GitHub: {username}
+
+## My Preferences
+
+- Commit messages: conventional commits (feat:, fix:, chore:, docs:)
+- Always run tests before suggesting a commit
+- Prefer concise responses; skip obvious explanations
+- When editing files, preserve existing style — don't reformat untouched code
+- Ask before deleting or overwriting files
+
+## Code Style Defaults
+
+- TypeScript: strict mode, named exports, functional components
+- Python: type hints, f-strings, pathlib over os.path
+- Indent: 2 spaces (JS/TS/YAML), 4 spaces (Python)
+- Prefer early returns over deep nesting
+
+## Common Tools I Use
+
+- Package manager: {npm | pnpm | yarn | bun}
+- Python env: {venv | conda | poetry | uv}
+- Docker: {yes | no}
+- Cloud: {AWS | GCP | Azure | Vercel | none}
+- CI: {GitHub Actions | GitLab CI | etc.}
+
+## Git Workflow
+
+- Branch naming: {feature/TICKET-desc | feat/desc | etc.}
+- PR strategy: {squash merge | rebase | merge commit}
+- Always delete branch after merge
+- Never force-push to main
+
+## API Keys & Environment
+
+- My .env files follow the pattern in ~/.env.shared/
+- Always create .env.example with placeholder values for any new project
+- Never commit actual secrets — use .env.local or environment variables
+
+## Gotchas About My Setup
+
+- {Machine-specific quirk, e.g., "M1 Mac — some npm packages need --arch=arm64"}
+- {Shell quirk, e.g., "Using fish shell — syntax differs from bash"}
+- {Network quirk, e.g., "Behind corporate proxy — set HTTP_PROXY"}

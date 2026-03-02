@@ -1,0 +1,10 @@
+# .envrc — Used by direnv (brew install direnv)
+# Copy to project root and run: direnv allow
+
+# Source shared API keys
+source_env ~/.env.shared/.env.master
+
+# Project-specific overrides
+export PORT=3000
+export NODE_ENV=development
+# export DATABASE_URL=postgresql://localhost:5432/myproject_dev
