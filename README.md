@@ -8,7 +8,27 @@ A comprehensive collection of **64 skills** for Claude Code / Cowork, organized 
 ├── core/           # Built-in Anthropic skills (13 skills)
 ├── plugins/        # Official plugin skills (49 skills)
 ├── marketplace/    # Marketplace skills (2 skills)
-└── templates/      # Reusable CLAUDE.md templates + GitHub configs
+├── templates/      # Reusable CLAUDE.md templates + GitHub configs
+└── memory-system/  # SQLite-backed memory with FTS5 + fuzzy search
+```
+
+## Memory System
+
+The `memory-system/` directory contains a SQLite-backed persistent memory with full-text search and fuzzy matching. See [memory-system/README.md](memory-system/README.md) for details.
+
+| Feature | How |
+|---------|-----|
+| Full-text search | FTS5 with BM25 ranking + porter stemming |
+| Fuzzy search | Trigram similarity for typo tolerance |
+| Smart search | FTS5 → fuzzy cascade |
+| Export | JSON, Markdown, or CLAUDE.md-compatible |
+| Shell integration | Aliases and helper functions for quick access |
+| Zero dependencies | Pure Python 3 stdlib |
+
+```bash
+# Quick example
+python3 memory-system/claude_memory.py add "Prisma gotcha" "Run generate after migrate" -c gotchas
+python3 memory-system/claude_memory.py smart "prizma migrat"  # typo-tolerant!
 ```
 
 ## Templates & Cross-Project Configs
