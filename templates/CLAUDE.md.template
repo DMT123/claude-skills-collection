@@ -1,0 +1,62 @@
+# {Project Name}
+
+{One-line description of what this project does}
+
+## Commands
+
+| Command | Purpose |
+|---------|---------|
+| `{install}` | Install dependencies |
+| `{dev}` | Start dev server |
+| `{build}` | Production build |
+| `{test}` | Run all tests |
+| `{test:single}` | Run single test: `{cmd} path/to/test` |
+| `{lint}` | Lint + format |
+
+## Architecture
+
+```
+{root}/
+  {dir}/    # {purpose}
+  {dir}/    # {purpose}
+  {dir}/    # {purpose}
+```
+
+## Key Files
+
+- `{entry}` — App entry point
+- `{config}` — Main config
+- `{types}` — Shared type definitions
+
+## Code Style
+
+- {Language version and key framework}
+- {Import ordering convention}
+- {Naming convention: e.g., camelCase for functions, PascalCase for components}
+- {Error handling pattern: e.g., Result types, try/catch, error boundaries}
+- {Prefer X over Y: e.g., named exports over default}
+
+## Environment
+
+Required vars:
+- `{VAR}` — {purpose}
+
+Setup: `cp .env.example .env` then fill in values.
+
+## Testing
+
+- Unit: `{unit test cmd}` — uses {framework}
+- Integration: `{int test cmd}` — requires {dependency}
+- Pattern: {e.g., "Factory functions in tests/factories/, not inline mocks"}
+
+## Gotchas
+
+- {Non-obvious thing #1 that wastes time if you don't know it}
+- {Non-obvious thing #2}
+- {Ordering dependency or prerequisite}
+
+## Workflow
+
+- {When to run what: e.g., "Always run lint before committing"}
+- {Branch naming: e.g., "feature/TICKET-123-description"}
+- {PR process: e.g., "Squash merge to main, delete branch after"}

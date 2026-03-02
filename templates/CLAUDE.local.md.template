@@ -1,0 +1,20 @@
+# Local Overrides (gitignored — personal preferences)
+
+## My Preferences
+
+- Commit style: {conventional commits | descriptive | etc.}
+- Editor: {vscode | vim | etc.}
+- Always run tests before suggesting a commit
+- Prefer concise explanations over verbose
+
+## Local Environment
+
+- Node: {version via nvm}
+- Python: {version}
+- DB running on: localhost:{port}
+
+## Shortcuts
+
+| Alias | Expands To |
+|-------|------------|
+| `{alias}` | `{full command}` |

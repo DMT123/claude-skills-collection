@@ -1,0 +1,31 @@
+# {Monorepo Name}
+
+{One-line description}
+
+## Packages
+
+| Package | Purpose | Path |
+|---------|---------|------|
+| `{name}` | {what it does} | `packages/{name}` |
+| `{name}` | {what it does} | `packages/{name}` |
+
+## Commands
+
+| Command | Scope | Purpose |
+|---------|-------|---------|
+| `{cmd}` | Root | Install all deps |
+| `{cmd}` | Root | Build all packages |
+| `{cmd} --filter={pkg}` | Single | Build one package |
+| `{cmd}` | Root | Run all tests |
+
+## Cross-Package Patterns
+
+- Shared types live in `packages/shared/` — import via `@{scope}/shared`
+- {Build order dependency: e.g., "Build shared before api"}
+- {Code generation: e.g., "Run codegen after schema changes"}
+
+## Gotchas
+
+- {Hoisting issue or workspace gotcha}
+- {Version alignment requirement}
+- {CI-specific consideration}

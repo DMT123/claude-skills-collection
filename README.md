@@ -7,8 +7,22 @@ A comprehensive collection of **64 skills** for Claude Code / Cowork, organized 
 ```
 ├── core/           # Built-in Anthropic skills (13 skills)
 ├── plugins/        # Official plugin skills (49 skills)
-└── marketplace/    # Marketplace skills (2 skills)
+├── marketplace/    # Marketplace skills (2 skills)
+└── templates/      # Reusable CLAUDE.md templates + GitHub configs
 ```
+
+## Templates & Cross-Project Configs
+
+The `templates/` directory contains reusable configs for any new project. See [templates/GUIDE.md](templates/GUIDE.md) for full details.
+
+| Template | Purpose |
+|----------|---------|
+| [CLAUDE.md.template](templates/CLAUDE.md.template) | Standard project CLAUDE.md |
+| [CLAUDE.monorepo.md.template](templates/CLAUDE.monorepo.md.template) | Monorepo CLAUDE.md |
+| [CLAUDE.local.md.template](templates/CLAUDE.local.md.template) | Personal overrides (gitignored) |
+| [.github/](templates/.github/) | CI workflow, PR template, issue templates, Dependabot |
+| [.editorconfig](templates/.editorconfig) | Consistent formatting across editors |
+| [.gitignore.template](templates/.gitignore.template) | Comprehensive gitignore |
 
 ## Core Skills
 
